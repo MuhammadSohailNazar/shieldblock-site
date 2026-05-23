@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — ShieldBlock</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1f2937;
+      background: #f9fafb;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    header {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 24px;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: #2563eb;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #111827;
+      margin-top: 16px;
+    }
+    .updated {
+      font-size: 14px;
+      color: #6b7280;
+      margin-top: 4px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #111827;
+      margin-top: 36px;
+      margin-bottom: 10px;
+    }
+    p { margin-bottom: 14px; color: #374151; }
+    ul { margin: 10px 0 14px 24px; }
+    li { margin-bottom: 6px; color: #374151; }
+    .highlight {
+      background: #eff6ff;
+      border-left: 4px solid #2563eb;
+      padding: 14px 18px;
+      border-radius: 4px;
+      margin: 24px 0;
+      font-weight: 500;
+      color: #1e40af;
+    }
+    a { color: #2563eb; }
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 13px;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="logo" href="index.html">ShieldBlock</a>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: May 23, 2026</p>
+    </header>
+
+    <div class="highlight">
+      ShieldBlock is a privacy-first extension. We do not collect your browsing history, track the websites you visit, or sell any data to third parties — ever.
+    </div>
+
+    <h2>1. What We Collect</h2>
+    <p>ShieldBlock collects the minimum data necessary to provide the service:</p>
+    <ul>
+      <li><strong>Email address</strong> — only if you create a Pro account (stored securely in Supabase)</li>
+      <li><strong>Subscription status</strong> — whether your Pro subscription is active or cancelled</li>
+      <li><strong>Stripe customer ID</strong> — a reference ID used to manage your billing (no card details)</li>
+    </ul>
+    <p>We do <strong>not</strong> collect:</p>
+    <ul>
+      <li>Your browsing history or the URLs you visit</li>
+      <li>Which ads were blocked on which sites</li>
+      <li>Your IP address or device identifiers</li>
+      <li>Any personally identifiable information beyond your email (Pro only)</li>
+    </ul>
+
+    <h2>2. Data Stored Locally on Your Device</h2>
+    <p>The following data is stored only in your browser's local storage (<code>chrome.storage.local</code>) and never leaves your device unless you explicitly enable cloud sync:</p>
+    <ul>
+      <li>Ad-block statistics (how many requests were blocked today, this week, etc.)</li>
+      <li>Your whitelist (sites where you've paused the extension)</li>
+      <li>Custom blocking rules you've added</li>
+      <li>Extension toggle settings (on/off, which features are enabled)</li>
+    </ul>
+
+    <h2>3. Cloud Sync (Pro Feature)</h2>
+    <p>If you are a Pro subscriber and enable cloud sync, your whitelist, custom rules, and toggle settings are encrypted in transit and stored in our Supabase database. This allows your settings to sync across devices. You can disable sync or delete your synced data at any time from the Account settings page.</p>
+
+    <h2>4. Payment Processing</h2>
+    <p>Payments are processed by <strong>Stripe</strong>. ShieldBlock never sees or stores your credit card number, CVV, or full billing address. All payment data is handled exclusively by Stripe under their own <a href="https://stripe.com/privacy" target="_blank">Privacy Policy</a>.</p>
+
+    <h2>5. Filter Lists</h2>
+    <p>ShieldBlock downloads publicly available filter lists (EasyList, EasyPrivacy, etc.) from their official CDN URLs to keep your blocking rules up to date. These requests do not include any personal data.</p>
+
+    <h2>6. Permissions Justification</h2>
+    <p>ShieldBlock requests the following Chrome permissions:</p>
+    <ul>
+      <li><strong>declarativeNetRequest</strong> — to block ads and trackers at the network level</li>
+      <li><strong>storage</strong> — to save your settings and statistics locally</li>
+      <li><strong>tabs</strong> — to update the badge count per tab and detect page navigation</li>
+      <li><strong>identity</strong> — to support Google sign-in for Pro accounts</li>
+      <li><strong>alarms</strong> — to schedule daily filter list updates and stats resets</li>
+    </ul>
+    <p>We do not use any permission for purposes beyond what is described above.</p>
+
+    <h2>7. Third-Party Services</h2>
+    <ul>
+      <li><strong>Supabase</strong> — authentication and cloud sync for Pro users (<a href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy</a>)</li>
+      <li><strong>Stripe</strong> — payment processing (<a href="https://stripe.com/privacy" target="_blank">Stripe Privacy Policy</a>)</li>
+    </ul>
+    <p>We do not use Google Analytics, Facebook Pixel, or any advertising or tracking SDKs.</p>
+
+    <h2>8. Data Retention and Deletion</h2>
+    <p>You can delete your account at any time from the Account settings page. Upon deletion, your email, Pro status, and synced settings are permanently removed from our servers within 30 days. Local data stored in <code>chrome.storage</code> can be cleared by uninstalling the extension.</p>
+
+    <h2>9. Children's Privacy</h2>
+    <p>ShieldBlock is not directed at children under 13. We do not knowingly collect personal information from children.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. We will notify Pro users by email of any material changes. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>11. Contact</h2>
+    <p>If you have any questions about this privacy policy, please contact us at <a href="mailto:support@shieldblock.app">support@shieldblock.app</a>.</p>
+
+    <footer>
+      &copy; 2026 ShieldBlock. All rights reserved. &nbsp;|&nbsp;
+      <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
+      <a href="terms.html">Terms of Service</a>
+    </footer>
+  </div>
+</body>
+</html>
